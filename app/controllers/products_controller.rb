@@ -10,13 +10,14 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(permitted_product_params)
+    respond_to do |format|
       if @product.save
         flash[:success] = 'Product was successfully created.'
-        format.html { redirect_to @product }
+        format.html { redirect_to @product}
       else
         format.html {render :new}
       end
-
+    end
   end
 
   def show
