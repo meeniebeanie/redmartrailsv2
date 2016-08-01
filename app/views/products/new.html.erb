@@ -1,0 +1,18 @@
+<h1>Products#new</h1>
+<p>Find me in app/views/products/new.html.erb</p>
+
+<%= form_for(@product) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+
+  <%= f.label :product_id, "Product Id" %>
+  <%= f.number_field :product_id %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.submit "Create New Product" %>
+<% end %>

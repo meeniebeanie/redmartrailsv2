@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  product_id: 1
+  price: 1
+  password: MyString
+  password_confirmation: MyString
+
+two:
+  name: MyString
+  product_id: 1
+  price: 1
+  password: MyString
+  password_confirmation: MyString

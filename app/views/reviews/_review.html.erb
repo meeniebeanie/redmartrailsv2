@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th>Rating</th>
+      <th>User</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td> <%= review.comment %> </td>
+      <td> <%= review.rating %> </td>
+      <td> <%= review.user.name %> </td>
+      <td> <%= link_to 'Review', '#' %> </td>
+      <td> <%= link_to 'Edit', '#' %> </td>
+      <td> <%= link_to 'Destroy', '#'%> </td>
+    </tr>
+  </tbody>
+
+</table>

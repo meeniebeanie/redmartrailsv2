@@ -1,0 +1,19 @@
+<h1>Products#edit</h1>
+
+  <div class="field">
+  <%= form_for @product do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :category %>
+    <%= f.text_field :category %>
+
+    <%= f.label :product_id, "Product Id" %>
+    <%= f.number_field :product_id %>
+
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+
+    <%= f.submit "Save changes"%>
+  <% end %>
+  </div>

@@ -1,0 +1,25 @@
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>category:</strong>
+  <%= @product.category %>
+</p>
+
+<p>
+  <strong>Product Id:</strong>
+  <%= @product.id %>
+</p>
+
+
+<p>
+  <strong>price:</strong>
+  <%= @product.price %>
+</p>
+
+<% if @product.reviews.any? %>
+  <h3>Reviews (<%= @product.reviews.count %>)</h3>
+  <%= render Review.all %>
+<% end %>

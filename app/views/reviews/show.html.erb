@@ -1,0 +1,6 @@
+<p>show one single review</p>
+
+<% if @user.reviews.any? %>
+  <h3>Reviews (<%= @user.reviews.count %>)</h3>
+  <%= render @reviews %>
+  <% end %>
