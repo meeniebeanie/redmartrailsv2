@@ -3,8 +3,6 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    @user = User.find(params[:id])
-    @reviews = @user.reviews
   end
 
   def new
